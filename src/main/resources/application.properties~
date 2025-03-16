@@ -1,3 +1,2 @@
 spring.application.name=Project Management
-spring.profiles.active=dev
-
+spring.profile.active=dev
