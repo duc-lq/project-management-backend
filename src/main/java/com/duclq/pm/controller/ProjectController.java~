@@ -46,7 +46,7 @@ public class ProjectController {
         return ResponseEntity.ok(updatedProject);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("{id}")
     public ResponseEntity<Void> deleteProject(@PathVariable Long id){
         Optional<Project> projectOptional = projectRepository.findById(id);
         if(projectOptional.isEmpty()){
